@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger Malek | AI & Automation Expert</title>
+    <meta name="description" content="Freelance AI Automation Expert specializing in n8n workflows and AI Agents. Maximizing operational efficiency for businesses.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9', // Sky blue for tech feel
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        },
+                        dark: {
+                            bg: '#0f172a', // Slate 900
+                            card: '#1e293b', // Slate 800
+                            border: '#334155',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-slate-800 bg-dark-bg/90 backdrop-blur-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white tracking-tight">Roger<span class="text-brand-500">Malek</span></span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false" id="menu-toggle">
+                <span class="sr-only">Open main menu</span>
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li>
+                        <a href="#about" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-brand-500 md:p-0">About</a>
+                    </li>
+                    <li>
+                        <a href="#expertise" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-brand-500 md:p-0">Expertise</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-brand-500 md:p-0">Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 text-white bg-brand-600 rounded md:bg-transparent md:text-brand-500 md:p-0 dark:text-white md:dark:text-brand-500" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Background decorative elements -->
+        <div class="absolute top-20 right-0 w-72 h-72 bg-brand-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-40 left-0 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 relative z-10">
+            <div class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-300 bg-gray-800 rounded-full hover:bg-gray-700 border border-gray-600" role="alert">
+                <span class="text-xs bg-brand-600 rounded-full text-white px-4 py-1.5 mr-3">Available for Hire</span> <span class="text-sm font-medium">Accepting new projects for Q4</span> 
+            </div>
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                Streamlining Business with <br> <span class="gradient-text">AI Agents & Intelligent Workflows</span>
+            </h1>
+            <p class="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48">
+                I design custom n8n automations and AI solutions that maximize operational efficiency and drive innovation. Stop doing busy work—start building the future.
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <a href="#contact" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-brand-600 hover:bg-brand-700 focus:ring-4 focus:ring-brand-900 transition-all">
+                    Let's Automate
+                    <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+                <a href="#portfolio" class="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-gray-400 border border-gray-600 rounded-lg hover:bg-gray-700 hover:text-white focus:ring-4 focus:ring-gray-700 transition-all">
+                    View Portfolio
+                </a>
+            </div> 
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-dark-bg border-t border-dark-border">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="md:flex md:items-center md:justify-between gap-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">Hello, I'm Roger.</h2>
+                    <p class="text-gray-400 mb-4 text-lg">
+                        Based in Manchester, UK, I bridge the gap between complex AI capabilities and practical business needs. 
+                    </p>
+                    <p class="text-gray-400 mb-6">
+                        My passion lies in building autonomous workflows using <strong>n8n</strong> and creating <strong>AI Agents</strong> that solve real problems. I don't just write code; I architect systems that allow businesses to scale without increasing headcount.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="flex items-center gap-2 text-gray-300">
+                            <i data-lucide="map-pin" class="text-brand-500 w-5 h-5"></i> Manchester, UK
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-300">
+                            <i data-lucide="languages" class="text-brand-500 w-5 h-5"></i> English (Native Level)
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i data-lucide="cpu" class="w-10 h-10 text-brand-500 mx-auto mb-3"></i>
+                        <h3 class="text-xl font-bold text-white">AI Agents</h3>
+                        <p class="text-gray-400 text-sm mt-2">Autonomous assistants</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i data-lucide="workflow" class="w-10 h-10 text-brand-500 mx-auto mb-3"></i>
+                        <h3 class="text-xl font-bold text-white">n8n Expert</h3>
+                        <p class="text-gray-400 text-sm mt-2">Complex workflows</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i data-lucide="zap" class="w-10 h-10 text-brand-500 mx-auto mb-3"></i>
+                        <h3 class="text-xl font-bold text-white">Efficiency</h3>
+                        <p class="text-gray-400 text-sm mt-2">Process optimization</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-xl text-center">
+                        <i data-lucide="code-2" class="w-10 h-10 text-brand-500 mx-auto mb-3"></i>
+                        <h3 class="text-xl font-bold text-white">Integration</h3>
+                        <p class="text-gray-400 text-sm mt-2">API Connections</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise / Services -->
+    <section id="expertise" class="py-16 bg-gray-900/50">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">How I Can Help You</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">I focus on high-impact automation. Whether you need to connect disparate apps or build a full-scale AI employee.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 border border-gray-700 rounded-xl hover:border-brand-500 transition-colors bg-gray-800/40">
+                    <div class="w-12 h-12 bg-brand-900/50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="git-merge" class="text-brand-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">n8n Workflow Automation</h3>
+                    <p class="text-gray-400">
+                        Designing robust, error-handled workflows in n8n. I connect your CRM, Email, Database, and AI tools to run on autopilot.
+                    </p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 border border-gray-700 rounded-xl hover:border-brand-500 transition-colors bg-gray-800/40">
+                    <div class="w-12 h-12 bg-brand-900/50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="bot" class="text-brand-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom AI Agents</h3>
+                    <p class="text-gray-400">
+                        Building agents that can reason, browse the web, and execute tasks. Perfect for customer support, research, or lead qualification.
+                    </p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 border border-gray-700 rounded-xl hover:border-brand-500 transition-colors bg-gray-800/40">
+                    <div class="w-12 h-12 bg-brand-900/50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="bar-chart-3" class="text-brand-400 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Operational Optimization</h3>
+                    <p class="text-gray-400">
+                        Auditing your current manual processes and deploying technology to reduce costs and increase speed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-dark-bg">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Recent Projects</h2>
+                <p class="text-gray-400">Examples of workflows and agents in action.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-700 bg-gray-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-brand-900 text-brand-300 text-xs font-medium px-2.5 py-0.5 rounded border border-brand-800">n8n + OpenAI</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-400 transition-colors">Intelligent Lead Processing</h3>
+                        <p class="text-gray-400 mb-4">
+                            An automated system that captures leads from forms, enriches data using external APIs, scores the lead using GPT-4, and routes it to the appropriate Slack channel and CRM.
+                        </p>
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-2 py-1 bg-gray-700 rounded text-xs text-gray-300">Webhook</li>
+                            <li class="px-2 py-1 bg-gray-700 rounded text-xs text-gray-300">JSON Parsing</li>
+                            <li class="px-2 py-1 bg-gray-700 rounded text-xs text-gray-300">CRM Integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-xl border border-gray-700 bg-gray-800">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded border border-purple-800">AI Agent</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-brand-400 transition-colors">Market Research Agent</h3>
+                        <p class="text-gray-400 mb-4">
+                            A custom AI agent capable of browsing the web to gather competitor pricing and features, summarizing the findings into a PDF report, and emailing it to stakeholders.
+                        </p>
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="px-2 py-1 bg-gray-700 rounded text-xs text-gray-300">Web Scraping</li>
+                            <li class="px-2 py-1 bg-gray-700 rounded text-xs text-gray-300">LangChain</li>
+                            <li class="px-2 py-1 bg-gray-700 rounded text-xs text-gray-300">Automated Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="https://rogermalek.com" target="_blank" class="inline-flex items-center font-medium text-brand-500 hover:text-brand-400 hover:underline">
+                    Visit rogermalek.com for more details
+                    <i data-lucide="external-link" class="ml-2 w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Netlify Forms -->
+    <section id="contact" class="py-16 bg-gray-900/50 border-t border-gray-800">
+        <div class="max-w-screen-md mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white mb-4">Let's Work Together</h2>
+                <p class="text-gray-400">Have a project in mind? I'm currently accepting freelance contracts. Fill out the form below to discuss how we can automate your workflow.</p>
+            </div>
+
+            <form name="contact" method="POST" data-netlify="true" class="space-y-6 glass-card p-8 rounded-2xl">
+                <input type="hidden" name="form-name" value="contact">
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Your Name</label>
+                        <input type="text" id="name" name="name" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-brand-500 focus:border-brand-500 block w-full p-3" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-300">Your Email</label>
+                        <input type="email" id="email" name="email" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-brand-500 focus:border-brand-500 block w-full p-3" placeholder="john@company.com" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Project Type</label>
+                    <select id="subject" name="subject" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-brand-500 focus:border-brand-500 block w-full p-3">
+                        <option>n8n Workflow Automation</option>
+                        <option>Custom AI Agent Development</option>
+                        <option>Consultation / Audit</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-300">Your Message</label>
+                    <textarea id="message" name="message" rows="4" class="block p-3 w-full text-sm text-white bg-gray-700 rounded-lg border border-gray-600 focus:ring-brand-500 focus:border-brand-500" placeholder="Tell me about the process you want to automate..." required></textarea>
+                </div>
+
+                <button type="submit" class="w-full text-white bg-brand-600 hover:bg-brand-700 focus:ring-4 focus:outline-none focus:ring-brand-800 font-medium rounded-lg text-sm px-5 py-3 text-center transition-all">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-bg border-t border-gray-800 py-8">
+        <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gray-500 text-sm mb-4 md:mb-0">
+                © <span id="year"></span> Roger Malek. All Rights Reserved.
+            </div>
+            <div class="flex space-x-6">
+                <!-- LinkedIn Placeholder Link -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <!-- Twitter/X Placeholder Link -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="twitter" class="w-5 h-5"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <!-- Github Placeholder Link -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Set Current Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar-default');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
